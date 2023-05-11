@@ -9,6 +9,7 @@
 //
 
 #import "ToolbarIcons.h"
+#import "NSColor+DarkMode.h"
 
 
 @implementation ToolbarIcons
@@ -33,7 +34,7 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawAddLeftColumnIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
+    NSColor* standardColor = [[NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321] colorWithName:nil darkModeColor:[NSColor colorWithCalibratedRed: 1 green: 1 blue: 1 alpha: 0.321]];
     NSColor* highlightColor = [NSColor colorWithCalibratedRed: 0.351 green: 0.769 blue: 0.178 alpha: 0.96];
 
     //// Rectangle Drawing
@@ -63,7 +64,7 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawAddRightColumnIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
+    NSColor* standardColor = [[NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321] colorWithName:nil darkModeColor:[NSColor colorWithCalibratedRed: 1 green: 1 blue: 1 alpha: 0.321]];
     NSColor* highlightColor = [NSColor colorWithCalibratedRed: 0.351 green: 0.769 blue: 0.178 alpha: 0.96];
 
     //// Rectangle Drawing
@@ -93,7 +94,7 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawDeleteColumnIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
+    NSColor* standardColor = [[NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321] colorWithName:nil darkModeColor:[NSColor colorWithCalibratedRed: 1 green: 1 blue: 1 alpha: 0.321]];
     NSColor* deleteColor = [NSColor colorWithCalibratedRed: 0.844 green: 0.313 blue: 0.238 alpha: 0.74];
 
     //// Rectangle Drawing
@@ -123,7 +124,7 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawAddRowBelowIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
+    NSColor* standardColor = [[NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321] colorWithName:nil darkModeColor:[NSColor colorWithCalibratedRed: 1 green: 1 blue: 1 alpha: 0.321]];
     NSColor* highlightColor = [NSColor colorWithCalibratedRed: 0.351 green: 0.769 blue: 0.178 alpha: 0.96];
 
     //// Rectangle Drawing
@@ -153,7 +154,7 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawAddRowAboveIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
+    NSColor* standardColor = [[NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321] colorWithName:nil darkModeColor:[NSColor colorWithCalibratedRed: 1 green: 1 blue: 1 alpha: 0.321]];
     NSColor* highlightColor = [NSColor colorWithCalibratedRed: 0.351 green: 0.769 blue: 0.178 alpha: 0.96];
 
     //// Rectangle Drawing
@@ -183,7 +184,7 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawDeleteRowIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
+    NSColor* standardColor = [[NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321] colorWithName:nil darkModeColor:[NSColor colorWithCalibratedRed: 1 green: 1 blue: 1 alpha: 0.321]];
     NSColor* deleteColor = [NSColor colorWithCalibratedRed: 0.844 green: 0.313 blue: 0.238 alpha: 0.74];
 
     //// Rectangle Drawing

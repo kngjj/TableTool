@@ -64,6 +64,10 @@
 
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController {
     [super windowControllerDidLoadNib:aController];
+    if (@available(macOS 10.9, *)) {
+        self.tableView.enclosingScrollView.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
+    }
+    
     dataCell = [self.tableView.tableColumns.firstObject dataCell];
     [self updateTableColumns];
     
