@@ -67,6 +67,9 @@
     if (@available(macOS 10.9, *)) {
         self.tableView.enclosingScrollView.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
     }
+    if (@available(macOS 11.0, *)) {
+        self.tableView.style = NSTableViewStylePlain;
+    }
     
     dataCell = [self.tableView.tableColumns.firstObject dataCell];
     [self updateTableColumns];
